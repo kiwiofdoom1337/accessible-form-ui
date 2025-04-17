@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>accessible form ui</title>
+</head>
+<body>
+  <form action="">
+    <div class="bigbox">
+      <div class="box1">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="What should we call you?" aria-required="true">
+
+        <label for="email">Email</label>
+        <input class="error-email" type="email" id="email" placeholder="john@doe.com" aria-required="true">
+        <span class="error">Email is already taken</span>
+
+        <label for="enter-pw">Enter Password</label>
+        <input type="password" id="enter-pw" placeholder="xxxxxxxx" aria-required="true">
+        <button class="eye1">👁</button>
+
+        <label for="confirm-pw">Confirm Password</label>
+        <input type="password" id="confirm-pw" placeholder="xxxxxxxx" aria-required="true">
+        <button class="eye2">👁</button>
+
+        <input type="submit" value="Update Profile">
+      </div>
+      <div class="box2">
+          <span class="circle-around">65%</span>
+          <span class="completeness">Profile Completeness</span>
+        <div class="box2-div">
+          <p class="crossed">Create Account</p>
+          <p class="crossed">Update Roadmap Progress</p>
+          <p class="crossed">Setup Public Profile</p>
+          <p>Complete your first project</p>
+          <p>Invite your Friends</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </form>
+</body>
+</html>
